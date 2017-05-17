@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txtcrono"
+            android:layout_width="282dp"
+            android:layout_height="227dp"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:background="@drawable/txt_circle"
+            android:textAlignment="gravity"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                >
+
+                <Button
+                    android:id="@+id/btnvuelta"
+                    android:layout_width="76dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_cicle"
+                    android:text="VUELTA" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp">
+
+                <Button
+                    android:id="@+id/btninipaus"
+                    android:layout_width="71dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_cicle"
+                    android:text="INICIAR" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp">
+
+                <Button
+                    android:id="@+id/btndetener"
+                    android:layout_width="79dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_cicle"
+                    android:text="DETENER" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vuelta :"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/txtvuelta"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/sv_vueltas"
+                android:layout_width="match_parent"
+                android:layout_height="194dp">
+
+                <TextView
+                    android:id="@+id/edit_vueltas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/negro"
+                    android:textSize="20dp" />
+
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

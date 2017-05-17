@@ -1,0 +1,13 @@
+#
+# generated on 2017/05/15 01:20:33
+#
+# --table-start--
+dataClass=com.example.dvjalexpablo.cronometro.Registros
+tableName=registros
+# --table-fields-start--
+# --field-start--
+fieldName=vuelta
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
